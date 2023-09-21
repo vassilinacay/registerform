@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="container-box">
+        <h1>Registration Form</h1>
+        <form id="registration-form">
+            <section id= "name">
+                <div class = "container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+            </section>
+        
+            <section id = "course">
+                <div class = "container">
+                    <label for="course">Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Computer Engineering">Computer Engineering</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Architecture">Architecture</option>
+                        <option value="Accounting">Accounting</option>
+                    </select>
+                </div>
+            </section>
+    
+            <section id = "year">
+                <div class="container">
+                    <label for="year">Year Level:</label>
+                    <select id="year" name="year" required>
+                        <option value="">Select Year</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </section>
+        
+            <section id = "gender-options">
+                <div class="container">
+                    <label>Gender:</label>
+                        <label for="male">
+                        <input type="radio" id="male" name="gender" value="Male" required> Male
+                        </label>
+                        <label for="female">
+                        <input type="radio" id="female" name="gender" value="Female" required> Female
+                        </label>
+                </div>
+            </section>
+        
+            <section id = "address">
+                <div class="container">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+            </section>
+        
+            <section id = "email">
+                <div class="container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </section >
+        
+            <section id = "contact-number">
+                <div class="container">
+                    <label for="contact">Contact Number:</label>
+                    <input type="contact" id="contact" name="contact" required>
+                </div>
+            </section>
+
+            <div class="btn-container">
+                <button type="submit" id="register-btn">Register</button>
+                <button type="button" id="clear-btn" class="clear-btn">Clear</button>
+                <button type="button" id="exit-btn" class="clear-btn">Exit</button>
+            </div>
+    </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
